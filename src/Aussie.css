@@ -1,0 +1,45 @@
+
+ 
+.house{
+  width: 50px;
+}
+
+.display{
+  display:flex;
+  justify-content: space-around;
+  margin-top: 300px;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.buttonSyd{
+  border-radius: 10%;
+  font-size: 35px;
+  color: #991825;
+}
+
+.sydWeather{
+  text-align: center;
+}
+
+.cityName{
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.cityDegrees{
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.iconWeather{
+  width: 80px!important;
+}
+
+
+ @media screen and (min-width: 1200px){
+  .house{
+    width: 50px;
+  }
+
+ }  
