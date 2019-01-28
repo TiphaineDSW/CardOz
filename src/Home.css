@@ -1,0 +1,146 @@
+/* .map2{
+  position: absolute;
+  top: 5px;
+  left: 350px;
+}
+
+.map1:hover{
+  background-color: pink;
+} */
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin-left: 200px;
+  margin-top: 0px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  margin-top:85px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #faf8ec;
+  transform: rotateY(180deg);
+  width:150%; 
+  height:295%!important;
+  border: 8px solid black;
+  margin-top:85px;
+}
+
+.display{
+  position: absolute;
+  right: 50px;
+  font-size: 28px!important;
+  margin-top: -130px!important;
+  color: #d4aa8d;
+  font-family:'Oswald', sans-serif;
+}
+
+.sydWeather{
+  text-align: center;
+}
+
+.cityName{
+  font-family:'Oswald', sans-serif;
+  font-size: 20px;
+  color: #f5c4b5;
+  letter-spacing: 3px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.cityDegrees{
+  font-weight: 300;
+  font-size: 20px;
+  color: #c3d1c0;
+  font-family:'Oswald', sans-serif;
+  text-align: left;
+  margin-left: 75px;
+  margin-top: -20px;
+}
+
+.iconWeather{
+  width: 75px!important;
+  text-align: left;
+  margin-left: -260px;
+  margin-top: -20px;
+}
+
+.brick{
+  background-image:url("brick.jpg") ;
+  width: 100%;
+  height: 2000px;
+  margin-top: 0px;
+ 
+}
+
+.opera{
+  width: 800px;
+}
+
+.house{
+  width: 35px!important;
+  position: absolute;
+  right: 90px;
+  top: 30px;
+}
+
+.train{
+  width: 800px;
+  position: absolute;
+  top: 150px;
+  right: -90px;
+}
+
+.underground{
+  width: 50px;
+  position: absolute;
+  right: 82px;
+  top: 130px;
+}
+
+.t1 {
+  width: 80%;
+  position: absolute;
+  top: 35px;
+  right: -10px;
+}
+
+.t4{
+  width: 80%;
+  position: absolute;
+  top: 35px;
+  right: -50px;
+}
+
