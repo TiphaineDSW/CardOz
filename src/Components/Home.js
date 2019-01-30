@@ -40,12 +40,8 @@ class Home extends Component {
 
 
   componentDidMount(){
-   if(navigator.geolocation) {
-       navigator.geolocation.getCurrentPosition((position) => {
-           this.getWeather(position.coords.latitude, position.coords.longitude);
-       });
-      }   
-     } 
+    this.getWeather()
+  } 
 
   
   render() {
