@@ -8,10 +8,11 @@ import home from '../home.png';
 import underground from '../underground.png';
 import station from '../station.jpg';
 import station4 from '../station4.jpg';
-// import {Col} from 'reactstrap';
+import {Col, Row} from 'reactstrap';
 // import {Image} from 'react-bootstrap';
 import CountUp from 'react-countup';
-import ToolTip from 'react-portal-tooltip';
+// import { TooltipComponent } from '@syncfusion/ej2-react-popups';
+// import { ButtonComponent } from '@syncfusion/ej2-react-buttons';
 
 
 class Home extends Component {
@@ -28,13 +29,6 @@ class Home extends Component {
     }
   }
 
-  showTooltip() {
-    this.setState({isTooltipActive: true})
-   }
-
-  hideTooltip() {
-    this.setState({isTooltipActive: false})
-  }
 
     getWeather = () => {
       fetch(`https://api.openweathermap.org/data/2.5/weather?lat=-33.867779&lon=151.208435&units=metric&appid=${this.state.apiKey}`)
@@ -52,7 +46,7 @@ class Home extends Component {
        });
       }   
      } 
-  
+
   
   render() {
 
@@ -63,6 +57,13 @@ class Home extends Component {
     const onStart = () => {
       console.log('Started! ð¨');
     };
+
+    // let style:
+    //   margin: '150px auto 0 auto',transform: 'translateY(-50%)'
+   
+    // let margin:
+    //   margin: '40px'
+   
 
     return (
       
@@ -94,32 +95,17 @@ class Home extends Component {
               >  
             </CountUp>
             <img className="underground" src={underground} alt="subway"/>
-            
 
-             {/* <img className="train" src={train} alt="trainLines"/> */}
-            
+
+           {/* <TooltipComponent  content='Tooltip from hover' opensOn='Hover' target='#hoverButton'>
+                 <ButtonComponent style={margin} id='hoverButton' className="blocks">Hover Me !(Default)</ButtonComponent>
+           </TooltipComponent> */}
+        
+         
+
              
-                <div id="text" ><a onMouseEnter={this.showTooltip.bind(this)} onMouseLeave={this.hideTooltip.bind(this)}><img className="t1" src={t1}/></a></div>
-                <ToolTip active={this.state.isTooltipActive} position="bottom" arrow="left" parent="#text">
-                    <div>
-                        <p>The North Shore, Northern and Western Line </p>
-                        <img className="station" src={station} alt="station" width="100%" margin="none" group="first"/>
-                    </div>    
-                </ToolTip>
 
-                <ToolTip active={true} position="right" arrow="center">
-                  <div id="text" ><a onMouseEnter={this.showTooltip.bind(this)} onMouseLeave={this.hideTooltip.bind(this)}><img className="t4" src={t4}/></a></div>
-               </ToolTip>
-
-                  {/* <div id="text" ><a onMouseEnter={this.showTooltip.bind(this)} onMouseLeave={this.hideTooltip.bind(this)}><img className="t4" src={t4}/></a></div>
-                <ToolTip active={this.state.isTooltipActive} position="top" arrow="left" parent="#text">
-                    <div>
-                        <p>Eastern Suburbs and Illawarra Line </p>
-                        <img className="station" src={station4} alt="station" width="100%" margin="none" group="second"/>
-                        
-                    </div>
-                </ToolTip>
-             */}
+                
 
         </div>
       </div>
@@ -134,9 +120,3 @@ export default Home;
 
 
 
-// <Col className="lg-6 map1">
-//       <NavLink  to="/aussie"><Image src={aussie} alt="map" responsive/></NavLink> 
-//     </Col>
-//     <Col className="lg-6 map2">
-//       <NavLink to="/usa"><Image src={usa} alt="map" responsive/></NavLink> 
-//     </Col>
