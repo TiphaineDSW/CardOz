@@ -136,10 +136,53 @@
   top: 35px;
   right: -50px;
 }
-.avatar{
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: yellow;
+
+.tooltip {
+  position: relative;
+  display: inline-block;
 }
 
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after  {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.line{
+  width: 100%;
+}
+
+.tooltip{
+  padding-left: 5px;
+  padding-right: 5px; 
+}
+
+.TrainLines{
+  position: absolute;
+  right: 3px;
+}

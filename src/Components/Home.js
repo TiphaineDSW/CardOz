@@ -1,20 +1,10 @@
 import React, { Component } from 'react';
 import '../Home.css';
-import '../Aussie.css';
-import Aussie from './Aussie.js';
-// import { NavLink } from 'react-router-dom';
 import mapSyd from '../mapSyd.jpg';
-// import t1 from '../t1.png';
-// import t4 from '../t4.png';
 import home from '../home.png';
 import underground from '../underground.png';
-// import station from '../station.jpg';
-// import station4 from '../station4.jpg';
-// import {Col, Row} from 'reactstrap';
-// import {Image} from 'react-bootstrap';
 import CountUp from 'react-countup';
-// import { TooltipComponent } from '@syncfusion/ej2-react-popups';
-// import { ButtonComponent } from '@syncfusion/ej2-react-buttons';
+
 
 
 class Home extends Component {
@@ -56,16 +46,10 @@ class Home extends Component {
       console.log('Started! ð¨');
     };
 
-    // let style:
-    //   margin: '150px auto 0 auto',transform: 'translateY(-50%)'
-   
-    // let margin:
-    //   margin: '40px'
-   
-
     return (
       
      <div className="brick">
+       
       <div className="flip-card">
       <div className="flip-card-inner">
         <div className="flip-card-front">
@@ -94,19 +78,24 @@ class Home extends Component {
             </CountUp>
             <Aussie></Aussie>
             <img className="underground" src={underground} alt="subway"/>
-           
-              
-              
-           {/* <TooltipComponent  content='Tooltip from hover' opensOn='Hover' target='#hoverButton'>
-                 <ButtonComponent style={margin} id='hoverButton' className="blocks">Hover Me !(Default)</ButtonComponent>
-           </TooltipComponent> */}
-        
-         
 
-             
-
-                
-
+            <div className="TrainLines">
+             <div className="tooltip"><img className="line" src={require('../one.png')} alt="line" />
+                <span className="tooltiptext">North and Western Line <img className="line" src={require('../station.jpg')} alt="line" /></span>
+             </div>
+             <div className="tooltip"><img className="line" src={require('../two.png')} alt="line" />
+                <span className="tooltiptext">	Inner West and Leppington Line <img className="line" src={require('../station2.jpg')} alt="line" /></span>
+             </div>
+             <div className="tooltip"><img className="line" src={require('../three.png')} alt="line" />
+                <span className="tooltiptext">Bankstown Line<img className="line" src={require('../station3.jpg')} alt="line" /></span>
+             </div>
+             <div className="tooltip"><img className="line" src={require('../four.png')} alt="line" />
+                <span className="tooltiptext">Eastern Suburbs and Illawarra Line<img className="line" src={require('../station4.jpg')} alt="line" /></span>
+             </div>
+             <div className="tooltip"><img className="line" src={require('../airport.png')} alt="line" />
+                <span className="tooltiptext">Airport and South Line<img className="line" src={require('../station8.jpg')} alt="line" /></span>
+             </div>
+            </div>
         </div>
       </div>
      </div>
