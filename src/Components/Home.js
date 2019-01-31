@@ -76,7 +76,9 @@ class Home extends Component {
                 onStart={onStart} 
               >  
             </CountUp>
+            <Aussie></Aussie>
             <img className="underground" src={underground} alt="subway"/>
+
             <div className="TrainLines">
              <div className="tooltip"><img className="line" src={require('../one.png')} alt="line" />
                 <span className="tooltiptext">North and Western Line <img className="line" src={require('../station.jpg')} alt="line" /></span>
@@ -94,13 +96,6 @@ class Home extends Component {
                 <span className="tooltiptext">Airport and South Line<img className="line" src={require('../station8.jpg')} alt="line" /></span>
              </div>
             </div>
-        
-         
-
-             
-
-                
-
         </div>
       </div>
      </div>
