@@ -62,7 +62,7 @@
   position: absolute;
   right: 50px;
   font-size: 28px!important;
-  margin-top: -130px!important;
+  margin-top: -95px!important;
   color: #d4aa8d;
   font-family:'Oswald', sans-serif;
 }
@@ -73,7 +73,7 @@
 
 .cityName{
   font-family:'Oswald', sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   color: #f5c4b5;
   letter-spacing: 3px;
   text-align: left;
@@ -113,7 +113,7 @@
   width: 35px!important;
   position: absolute;
   right: 90px;
-  top: 30px;
+  top: 20px;
 }
 
 .underground{
