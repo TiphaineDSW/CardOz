@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import '../Home.css';
+import '../Aussie.css';
+import Aussie from './Aussie.js';
 // import { NavLink } from 'react-router-dom';
 import mapSyd from '../mapSyd.jpg';
-import t1 from '../t1.png';
-import t4 from '../t4.png';
+// import t1 from '../t1.png';
+// import t4 from '../t4.png';
 import home from '../home.png';
 import underground from '../underground.png';
-import station from '../station.jpg';
-import station4 from '../station4.jpg';
-import {Col, Row} from 'reactstrap';
+// import station from '../station.jpg';
+// import station4 from '../station4.jpg';
+// import {Col, Row} from 'reactstrap';
 // import {Image} from 'react-bootstrap';
 import CountUp from 'react-countup';
 // import { TooltipComponent } from '@syncfusion/ej2-react-popups';
@@ -76,7 +78,7 @@ class Home extends Component {
             <p className="cityDegrees">{Math.floor(this.state.temp)} °C</p>
             <img className="iconWeather" src = {`http://openweathermap.org/img/w/${this.state.icon}.png`} alt={this.state.iconDescribe} ></img>
           </div>
-           <img className="house" src={home} />
+           <img className="house" src={home} alt="home" />
            <CountUp className="display"  
                 delay={2}
                 start={4999940}
@@ -90,9 +92,11 @@ class Home extends Component {
                 onStart={onStart} 
               >  
             </CountUp>
+            <Aussie></Aussie>
             <img className="underground" src={underground} alt="subway"/>
-
-
+           
+              
+              
            {/* <TooltipComponent  content='Tooltip from hover' opensOn='Hover' target='#hoverButton'>
                  <ButtonComponent style={margin} id='hoverButton' className="blocks">Hover Me !(Default)</ButtonComponent>
            </TooltipComponent> */}

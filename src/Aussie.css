@@ -1,45 +1,35 @@
 
+ html {
+  background-color: rgb(0, 250, 250);
+  position: relative;
+  bottom: 25%;
+}
+
+.planePath {
+  stroke: rgb(247, 203, 6);
+  stroke-width: .1%;
+  stroke-width: .5%;
+  stroke-dasharray: 1% 2%;
+  stroke-linecap: round;
+  fill: none;
+}
+
+.fil1 {
+  fill: #e29c22;
+}
+
+.fil2 {
+  fill: #c45c13;
+}
+
+.fil4 {
+  fill:#9b4a11;
+}
+
+.fil3 {
+  fill: #9b1811;
+}
  
-.house{
-  width: 50px;
-}
-
-.display{
-  display:flex;
-  justify-content: space-around;
-  margin-top: 300px;
-  font-weight: 300;
-  font-size: 30px;
-}
-
-.buttonSyd{
-  border-radius: 10%;
-  font-size: 35px;
-  color: #991825;
-}
-
-.sydWeather{
-  text-align: center;
-}
-
-.cityName{
-  font-weight: 300;
-  font-size: 30px;
-}
-
-.cityDegrees{
-  font-weight: 300;
-  font-size: 25px;
-}
-
-.iconWeather{
-  width: 80px!important;
-}
-
-
- @media screen and (min-width: 1200px){
-  .house{
-    width: 50px;
-  }
-
- }  
+ 
+  
+ 
