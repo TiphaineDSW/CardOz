@@ -4,6 +4,7 @@ import mapSyd from '../mapSyd.jpg';
 import home from '../home.png';
 import underground from '../underground.png';
 import CountUp from 'react-countup';
+import Aussie from './Aussie.js';
 
 
 
