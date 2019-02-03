@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@fortawesome/react-fontawesome": "^0.1.4",
+    "bootstrap": "^4.2.1",
     "countup.js": "^1.9.3",
     "react": "^16.7.0",
     "react-bootstrap": "^0.32.4",
