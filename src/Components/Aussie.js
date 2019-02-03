@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../Aussie.css';
-import {Animated} from "react-animated-css";
+
 
 
 
@@ -12,11 +12,11 @@ class Aussie extends Component {
    
      <div>
         <h1>Area</h1>
-       <Animated animationIn="fadeInLeft" animationOut="rollOut" isVisible={false}>
+        
        <div>
          <p>12,368km2</p>
        </div>
-       </Animated>
+      
        
        
     
