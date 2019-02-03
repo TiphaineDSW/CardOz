@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import '../Home.css';
 import mapSyd from '../mapSyd.jpg';
-import home from '../home.png';
-import underground from '../underground.png';
+import mansion from '../mansion.png';
+import train from '../train.png';
 import CountUp from 'react-countup';
 import Aussie from './Aussie.js';
 
@@ -68,7 +68,7 @@ class Home extends Component {
             <p className="cityDegrees">{Math.floor(this.state.temp)} °C</p>
             <img className="iconWeather" src = {`http://openweathermap.org/img/w/${this.state.icon}.png`} alt={this.state.iconDescribe} ></img>
           </div>
-           <img className="house" src={home} alt="home" />
+           <img className="house" src={mansion} alt="home" />
            <CountUp className="display"  
                 delay={2}
                 start={4999940}
@@ -83,8 +83,9 @@ class Home extends Component {
               >  
           </CountUp>
             
-            <img className="underground" src={underground} alt="subway"/>
-
+            <img className="underground" src={train} alt="subway"/>
+           
+           <div id="colorNumber">
             <div className="TrainLines">
              <div className="tooltip"><img className="line" src={require('../one.png')} alt="line" />
                 <span className="tooltiptext">North and Western Line <img className="line" src={require('../station.jpg')} alt="line" /></span>
@@ -102,6 +103,7 @@ class Home extends Component {
                 <span className="tooltiptext">Airport and South Line<img className="line" src={require('../station8.jpg')} alt="line" /></span>
              </div>
             </div>
+          </div> 
             <Aussie></Aussie>
         </div>
       </div>

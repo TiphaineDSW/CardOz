@@ -11,15 +11,12 @@ class Aussie extends Component {
    return(
    
      <div>
-        <h1>Area</h1>
-        
-       <div>
+        <h3 className="area">Area</h3>
+       <div className="km">
          <p>12,368km2</p>
        </div>
-      
        
-       
-    
+    <div className="paperplane">
       <svg viewBox="0 0 3387 1270">
         <path id="planePath" class="planePath"  d="M-226 626c439,4 636,-213 934,-225 755,-31 602,769 1334,658 562,-86 668,-698 266,-908 -401,-210 -893,189 -632,630 260,441 747,121 1051,91 360,-36 889,179 889,179" />
         <g id="plane">
@@ -33,6 +30,26 @@ class Aussie extends Component {
         <mpath xlink href="#planePath" />
       </animateMotion> 
     </svg>
+  </div>
+
+    <h3 className="monuments">Landmarks</h3>
+  <div className="landmarks">
+    <div className="tooltip"><img className="opera" src={require('../operahouse.png')} alt="operalogo" />
+        <span className="tooltiptext">The Opera House<img className="operaPic" src={require('../operaPic.jpg')} alt="operaimage" /></span>
+    </div>
+
+     <div className="tooltip"><img className="koala" src={require('../koala.png')} alt="koala" />
+     <span className="tooltiptext">Taronga Zoo<img className="zooPic" src={require('../zoo.jpg')} alt="zooimage" /></span>
+     </div>
+
+    <div className="tooltip"><img className="logoSurf" src={require('../surfboard.png')} alt="logoSurf" />
+        <span className="tooltiptext">Bondi Beach<img className="surfPic" src={require('../bondi.jpg')} alt="surf" /></span>
+    </div>
+
+    <div className="tooltip"><img className="logoTree" src={require('../tree.png')} alt="logoTree" />
+        <span className="tooltiptext">The Royal Botanical Garden<img className="gardenPic" src={require('../garden.jpeg')} alt="garden" /></span>
+    </div>
+  </div>  
 </div>
   );
  }
