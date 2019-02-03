@@ -60,10 +60,11 @@
 
 .display{
   position: absolute;
-  right: 50px;
+  right: 25px;
+  top: 180px;
   font-size: 28px!important;
   margin-top: -95px!important;
-  color: #d4aa8d;
+  color: #e83333;
   font-family:'Oswald', sans-serif;
 }
 
@@ -74,20 +75,21 @@
 .cityName{
   font-family:'Oswald', sans-serif;
   font-size: 25px;
-  color: #f5c4b5;
+  color: rgb(22, 171, 182);
   letter-spacing: 3px;
   text-align: left;
   margin-left: 20px;
+  margin-top: 10px;
 }
 
 .cityDegrees{
   font-weight: 300;
   font-size: 20px;
-  color: #c3d1c0;
+  color: #ffa323;
   font-family:'Oswald', sans-serif;
   text-align: left;
   margin-left: 75px;
-  margin-top: -20px;
+  margin-top: -15px;
 }
 
 .iconWeather{
@@ -110,16 +112,16 @@
 }
 
 .house{
-  width: 35px!important;
+  width: 55px!important;
   position: absolute;
-  right: 90px;
+  right: 50px!important;
   top: 20px;
 }
 
 .underground{
-  width: 50px;
+  width: 50px!important;
   position: absolute;
-  right: 82px;
+  right: 190px;
   top: 130px;
 }
 
@@ -183,8 +185,11 @@
 }
 
 .TrainLines{
-  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  /* position: absolute;
   right: 3px;
+  top: 190px; */
 }
 
 /* Add a black background color to the top navigation */
@@ -226,6 +231,11 @@
   color: white;
 }
 
+#colorNumber{
+  position: relative;
+  top: 40px;
+
+}
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
