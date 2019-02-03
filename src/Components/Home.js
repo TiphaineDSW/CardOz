@@ -4,8 +4,7 @@ import mapSyd from '../mapSyd.jpg';
 import home from '../home.png';
 import underground from '../underground.png';
 import CountUp from 'react-countup';
-
-
+import Aussie from './Aussie.js';
 
 class Home extends Component {
   
@@ -47,9 +46,15 @@ class Home extends Component {
     };
 
     return (
-      
+    <div> 
+      <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="#news" className="link">News</a>
+      <a href="#contact" className="link">Contact</a>
+      <a href="#about" className="link">About</a>
+      {/* <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> */}
+     </div>
      <div className="brick">
-       
       <div className="flip-card">
       <div className="flip-card-inner">
         <div className="flip-card-front">
@@ -75,8 +80,8 @@ class Home extends Component {
                 onComplete={onComplete}
                 onStart={onStart} 
               >  
-            </CountUp>
-            <Aussie></Aussie>
+          </CountUp>
+            
             <img className="underground" src={underground} alt="subway"/>
 
             <div className="TrainLines">
@@ -84,7 +89,7 @@ class Home extends Component {
                 <span className="tooltiptext">North and Western Line <img className="line" src={require('../station.jpg')} alt="line" /></span>
              </div>
              <div className="tooltip"><img className="line" src={require('../two.png')} alt="line" />
-                <span className="tooltiptext">	Inner West and Leppington Line <img className="line" src={require('../station2.jpg')} alt="line" /></span>
+                <span className="tooltiptext">Inner West and Leppington Line<img className="line" src={require('../station2.jpg')} alt="line" /></span>
              </div>
              <div className="tooltip"><img className="line" src={require('../three.png')} alt="line" />
                 <span className="tooltiptext">Bankstown Line<img className="line" src={require('../station3.jpg')} alt="line" /></span>
@@ -96,9 +101,11 @@ class Home extends Component {
                 <span className="tooltiptext">Airport and South Line<img className="line" src={require('../station8.jpg')} alt="line" /></span>
              </div>
             </div>
+            <Aussie></Aussie>
         </div>
       </div>
      </div>
+    </div> 
     </div> 
     );
   }
