@@ -6,6 +6,7 @@ import underground from '../underground.png';
 import CountUp from 'react-countup';
 import Aussie from './Aussie.js';
 
+
 class Home extends Component {
   
   constructor(){
