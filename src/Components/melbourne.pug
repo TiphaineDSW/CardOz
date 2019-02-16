@@ -1,0 +1,118 @@
+mixin tree(position)
+  .tree-figure(class=position)
+    .leaves
+      each chunk in [1,2,3,4]
+        .chunk
+    .trunk
+
+mixin building(position, ...items)
+  .building(class=position)
+    each item in items
+      .top
+
+mixin door-panel
+  .door-panel
+    .glass
+    .hinge-section
+      .hinge
+      
+mixin window
+  .window
+    .top
+    .bottom
+   
+mixin nose-panel(position)
+  .nose-panel(class=position)
+    .top
+    .wind-shield
+      .glass-panel
+        .glass
+      .panel
+    .nose
+    .strip
+    .gutter
+
+mixin trunk-panel
+  .trunk-panel
+    .outline
+    .side-panel
+      .door
+        +door-panel
+        +door-panel
+      .panel-area
+        .window-row
+          + window
+          + window
+        .strip-row
+          .emblem
+          .emblem
+        .outline
+        .gutter-row
+          .inner
+      .door
+        +door-panel
+        +door-panel
+
+.encapsulate-fig
+  
+  a.social-link(href="https://dribbble.com/arisacoba" target="_blank")
+      img.emblem(src="https://cdn.dribbble.com/assets/dribbble-ball-mark-2bd45f09c2fb58dbbfb44766d5d1d07c5a12972d602ef8b32204d28fa3dda554.svg")
+      span.label arisacoba
+  .illo    
+    .trees-avenue
+      +tree("-v1")
+      +tree("-v2")
+      +tree("-v3")
+    .trees-avenue.-v2
+      +tree("-v1")
+      +tree("-v2")
+      +tree("-v3")
+
+    .cityscape
+      .building-row
+        +building("-v1")
+        +building("-v3", 1,2,3,4)
+        +building("-v5", 1)
+        +building("-v1")
+        +building("-v3", 1,2,3,4)
+        +building("-v5", 1)
+        +building("-v1")
+        +building("-v3", 1,2,3,4)
+        +building("-v5", 1)
+      .building-row.-v2
+        +building("-v1")
+        +building("-v3", 1,2,3,4)
+        +building("-v5", 1)
+        +building("-v1")
+        +building("-v3", 1,2,3,4)
+        +building("-v5", 1)
+        +building("-v1")
+        +building("-v3", 1,2,3,4)
+        +building("-v5", 1)
+
+    .tram
+      .tram-fig
+        .powerline
+        .pantograph
+          .line
+          .line
+        .body
+          +nose-panel
+          .trunks
+            - for (var _trunk = 1; _trunk <= 3; _trunk++) {
+              +trunk-panel
+            - }
+            .front-trunk
+              .outline
+              .front-window
+                .hook-column
+                  - for (var _hook = 1; _hook <= 4; _hook++) {
+                  .hook
+                  - }
+                .window
+                  .top
+                  .bottom
+              .strip
+              .gutter
+          +nose-panel("-reverse")
+        .shadow

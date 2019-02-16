@@ -6,9 +6,7 @@ import train from '../train.png';
 import CountUp from 'react-countup';
 import Aussie from './Aussie.js';
 
-
 class Home extends Component {
-  
   constructor(){
     super();
     this.state = {
@@ -21,7 +19,6 @@ class Home extends Component {
     }
   }
 
-
     getWeather = () => {
       fetch(`https://api.openweathermap.org/data/2.5/weather?lat=-33.867779&lon=151.208435&units=metric&appid=${this.state.apiKey}`)
       .then(response => response.json())
@@ -30,14 +27,11 @@ class Home extends Component {
       });
   }
 
-
   componentDidMount(){
     this.getWeather()
   } 
 
-  
   render() {
-
     const onComplete = () => {
       console.log('Completed! ð');
     };
@@ -47,29 +41,27 @@ class Home extends Component {
     };
 
     return (
-    <div> 
+     <div> 
       <div class="topnav" id="myTopnav">
-      <a href="#home" class="active">Home</a>
-      <a href="#news" className="link">News</a>
-      <a href="#contact" className="link">Contact</a>
-      <a href="#about" className="link">About</a>
-      {/* <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> */}
+        <a href="#home" class="active">Home</a>
+        <a href="#news" className="link">News</a>
+        <a href="#contact" className="link">Contact</a>
+        <a href="#about" className="link">About</a>
      </div>
      <div className="brick">
       <div className="flip-card">
-      <div className="flip-card-inner">
-        <div className="flip-card-front">
-          <img src={mapSyd} alt="Avatar" width="150%" height="295%"/>
-        </div>
-
-        <div className="flip-card-back">
-          <div className="sydWeather">
-            <h2 className="cityName">{this.state.name}</h2>
-            <p className="cityDegrees">{Math.floor(this.state.temp)} °C</p>
-            <img className="iconWeather" src = {`http://openweathermap.org/img/w/${this.state.icon}.png`} alt={this.state.iconDescribe} ></img>
+        <div className="flip-card-inner">
+          <div className="flip-card-front">
+            <img src={mapSyd} alt="Avatar" width="150%" height="295%"/>
           </div>
-           <img className="house" src={mansion} alt="home" />
-           <CountUp className="display"  
+          <div className="flip-card-back">
+            <div className="sydWeather">
+               <h2 className="cityName">{this.state.name}</h2>
+               <p className="cityDegrees">{Math.floor(this.state.temp)} °C</p>
+               <img className="iconWeather" src = {`http://openweathermap.org/img/w/${this.state.icon}.png`} alt={this.state.iconDescribe} ></img>
+            </div>
+            <img className="house" src={mansion} alt="home" />
+            <CountUp className="display"  
                 delay={2}
                 start={4999940}
                 end={5000000}
@@ -81,39 +73,36 @@ class Home extends Component {
                 onComplete={onComplete}
                 onStart={onStart} 
               >  
-          </CountUp>
-            
-            <img className="underground" src={train} alt="subway"/>
-           
-           <div id="colorNumber">
-            <div className="TrainLines">
-             <div className="tooltip"><img className="line" src={require('../one.png')} alt="line" />
-                <span className="tooltiptext">North and Western Line <img className="line" src={require('../station.jpg')} alt="line" /></span>
+           </CountUp>
+           <img className="underground" src={train} alt="subway"/>
+            <div id="colorNumber">
+              <div className="TrainLines">
+               <div className="tooltip"><img className="line" src={require('../one.png')} alt="line" />
+                 <span className="tooltiptext">North and Western Line <img className="line" src={require('../station.jpg')} alt="line" /></span>
+               </div>
+               <div className="tooltip"><img className="line" src={require('../two.png')} alt="line" />
+                 <span className="tooltiptext">Inner West and Leppington Line<img className="line" src={require('../station2.jpg')} alt="line" /></span>
+               </div>
+               <div className="tooltip"><img className="line" src={require('../three.png')} alt="line" />
+                 <span className="tooltiptext">Bankstown Line<img className="line" src={require('../station3.jpg')} alt="line" /></span>
+               </div>
+              <div className="tooltip"><img className="line" src={require('../four.png')} alt="line" />
+                 <span className="tooltiptext">Eastern Suburbs and Illawarra Line<img className="line" src={require('../station4.jpg')} alt="line" /></span>
+              </div>
+              <div className="tooltip"><img className="line" src={require('../airport.png')} alt="line" />
+                 <span className="tooltiptext">Airport and South Line<img className="line" src={require('../station8.jpg')} alt="line" /></span>
+              </div>
              </div>
-             <div className="tooltip"><img className="line" src={require('../two.png')} alt="line" />
-                <span className="tooltiptext">Inner West and Leppington Line<img className="line" src={require('../station2.jpg')} alt="line" /></span>
-             </div>
-             <div className="tooltip"><img className="line" src={require('../three.png')} alt="line" />
-                <span className="tooltiptext">Bankstown Line<img className="line" src={require('../station3.jpg')} alt="line" /></span>
-             </div>
-             <div className="tooltip"><img className="line" src={require('../four.png')} alt="line" />
-                <span className="tooltiptext">Eastern Suburbs and Illawarra Line<img className="line" src={require('../station4.jpg')} alt="line" /></span>
-             </div>
-             <div className="tooltip"><img className="line" src={require('../airport.png')} alt="line" />
-                <span className="tooltiptext">Airport and South Line<img className="line" src={require('../station8.jpg')} alt="line" /></span>
-             </div>
-            </div>
-          </div> 
-            <Aussie></Aussie>
+            </div> 
+           <Aussie></Aussie>
+          </div>
+         </div>
         </div>
-      </div>
-     </div>
-    </div> 
-    </div> 
+       </div> 
+      </div> 
     );
   }
 }
-
 
 export default Home;
 
