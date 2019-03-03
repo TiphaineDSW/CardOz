@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
-import '../Home.css';
-import mapSyd from '../mapSyd.jpg';
-import mansion from '../mansion.png';
-import train from '../train.png';
-import CountUp from 'react-countup';
+import '../css/Home.css';
 import Aussie from './Aussie.js';
+import mapSyd from '../images/mapSyd.jpg';
+import mansion from '../images/mansion.png';
+import train from '../images/train.png';
+import CountUp from 'react-countup';
+import one from '../images/one.png';
+import station from '../images/station.jpg';
+
 
 class Home extends Component {
   constructor(){
@@ -77,20 +80,20 @@ class Home extends Component {
            <img className="underground" src={train} alt="subway"/>
             <div id="colorNumber">
               <div className="TrainLines">
-               <div className="tooltip"><img className="line" src={require('../one.png')} alt="line" />
-                 <span className="tooltiptext">North and Western Line <img className="line" src={require('../station.jpg')} alt="line" /></span>
+               <div className="info"><img className="line" src={one} alt="line" />
+                 <span className="bubble">North and Western Line <img className="line" src={station} alt="line" /></span>
                </div>
-               <div className="tooltip"><img className="line" src={require('../two.png')} alt="line" />
-                 <span className="tooltiptext">Inner West and Leppington Line<img className="line" src={require('../station2.jpg')} alt="line" /></span>
+               <div className="info"><img className="line" src={require('../images/two.png')} alt="line" />
+                 <span className="bubble">Inner West and Leppington Line<img className="line" src={require('../images/station2.jpg')} alt="line" /></span>
                </div>
-               <div className="tooltip"><img className="line" src={require('../three.png')} alt="line" />
-                 <span className="tooltiptext">Bankstown Line<img className="line" src={require('../station3.jpg')} alt="line" /></span>
+               <div className="info"><img className="line" src={require('../images/three.png')} alt="line" />
+                 <span className="bubble">Bankstown Line<img className="line" src={require('../images/station3.jpg')} alt="line" /></span>
                </div>
-              <div className="tooltip"><img className="line" src={require('../four.png')} alt="line" />
-                 <span className="tooltiptext">Eastern Suburbs and Illawarra Line<img className="line" src={require('../station4.jpg')} alt="line" /></span>
+              <div className="info"><img className="line" src={require('../images/four.png')} alt="line" />
+                 <span className="bubble">Eastern Suburbs and Illawarra Line<img className="line" src={require('../images/station4.jpg')} alt="line" /></span>
               </div>
-              <div className="tooltip"><img className="line" src={require('../airport.png')} alt="line" />
-                 <span className="tooltiptext">Airport and South Line<img className="line" src={require('../station8.jpg')} alt="line" /></span>
+              <div className="info"><img className="line" src={require('../images/airport.png')} alt="line" />
+                 <span className="bubble">Airport and South Line<img className="line" src={require('../images/station8.jpg')} alt="line" /></span>
               </div>
              </div>
             </div> 

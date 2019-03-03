@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import './App.css'
+import './css/App.css'
 import Home from './Components/Home';
 import Melbourne from './Components/Melbourne';
+// import CoverOZ from './Components/CardOz';
 
 
 

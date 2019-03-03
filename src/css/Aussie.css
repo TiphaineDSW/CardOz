@@ -1,0 +1,132 @@
+
+.planePath {
+  stroke: rgb(247, 203, 6);
+  stroke-width: .1%;
+  stroke-width: .5%;
+  stroke-dasharray: 1% 2%;
+  stroke-linecap: round;
+  fill: none;
+}
+
+.fil1 {
+  fill: #e29c22;
+}
+
+.fil2 {
+  fill: #c45c13;
+}
+
+.fil4 {
+  fill:#9b4a11;
+}
+
+.fil3 {
+  fill: #9b1811;
+}
+
+.area {
+  color: rgb(22, 171, 182);
+  letter-spacing: 3px;
+  font-family: 'Lora', serif;
+  position: absolute;
+  left: 200px;
+  top: 240px;
+}
+
+.monuments{
+  color: rgb(22, 171, 182);
+  letter-spacing: 5px;
+  font-family: 'Lora', serif;
+  position: absolute;
+  bottom: 100px;
+  left: 140px;
+}
+
+.paperplane{
+  position: relative;
+  top: 38px;
+}
+ 
+p {
+  color: #c45c13;
+  letter-spacing: 2px;
+}
+
+.km{
+  position: relative;
+  top: 130px;
+  left: 52px;
+}
+ 
+  
+ .opera{
+  width: 60px!important;
+ }
+
+ .tool {
+  position: relative;
+  display: inline-block;
+}
+
+.tool .tooltext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tool .tooltext::after  {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+
+}
+
+.tool:hover .tooltext {
+  visibility: visible;
+}
+
+
+.tool{
+  padding-left: 5px;
+  padding-right: 5px; 
+}
+
+.gardenPic {
+  width: 120px;
+  height: 90px;
+} 
+
+.surfPic {
+  width: 120px;
+  height: 90px;
+} 
+
+.zooPic {
+  width: 120px;
+  height: 90px;
+} 
+
+.operaPic {
+  width: 120px;
+  height: 90px;
+} 
+
+.landmarks{
+  position: absolute;
+  bottom: 30px;
+  left: 75px;
+}
