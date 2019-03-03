@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import '../Aussie.css';
-
+import '../css/Aussie.css';
+import operahouse from '../images/operahouse.png';
+import operaPic from '../images/operaPic.jpg';
 
 
 
@@ -34,20 +35,20 @@ class Aussie extends Component {
 
     <h3 className="monuments">Landmarks</h3>
   <div className="landmarks">
-    <div className="tooltip"><img className="opera" src={require('../operahouse.png')} alt="operalogo" />
-        <span className="tooltiptext">The Opera House<img className="operaPic" src={require('../operaPic.jpg')} alt="operaimage" /></span>
+    <div className="tool"><img className="opera" src={operahouse} alt="operalogo" />
+        <span className="tooltext">The Opera House<img className="operaPic" src={operaPic} alt="operaimage" /></span>
     </div>
 
-     <div className="tooltip"><img className="koala" src={require('../koala.png')} alt="koala" />
-     <span className="tooltiptext">Taronga Zoo<img className="zooPic" src={require('../zoo.jpg')} alt="zooimage" /></span>
+     <div className="tool"><img className="koala" src={require('../images/koala.png')} alt="koala" />
+     <span className="tooltext">Taronga Zoo<img className="zooPic" src={require('../images/zoo.jpg')} alt="zooimage" /></span>
      </div>
 
-    <div className="tooltip"><img className="logoSurf" src={require('../surfboard.png')} alt="logoSurf" />
-        <span className="tooltiptext">Bondi Beach<img className="surfPic" src={require('../bondi.jpg')} alt="surf" /></span>
+    <div className="tool"><img className="logoSurf" src={require('../images/surfboard.png')} alt="logoSurf" />
+        <span className="tooltext">Bondi Beach<img className="surfPic" src={require('../images/bondi.jpg')} alt="surf" /></span>
     </div>
 
-    <div className="tooltip"><img className="logoTree" src={require('../tree.png')} alt="logoTree" />
-        <span className="tooltiptext">The Royal Botanical Garden<img className="gardenPic" src={require('../garden.jpeg')} alt="garden" /></span>
+    <div className="tool"><img className="logoTree" src={require('../images/tree.png')} alt="logoTree" />
+        <span className="tooltext">The Royal Botanical Garden<img className="gardenPic" src={require('../images/garden.jpeg')} alt="garden" /></span>
     </div>
   </div>  
 </div>
