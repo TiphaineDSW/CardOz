@@ -7,77 +7,85 @@
   perspective: 1000px; 
   margin-left: 550px;
   position: absolute;
-  top: 100px;
-  left: 30em;
+  top: 92px;
+  left: 10em;
 }
 .flip-card-inner2 {
-  width: 300px;
+  width: 500px;
   height: 150px;
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
 .flip-card2:hover .flip-card-inner2 {
   transform: rotateY(180deg);
-  margin-top: -150px;
-  
 }
-.flip-card-front2 {
+.flip-card-front2  {
   width: 100%;
   height: 100%;
   backface-visibility: hidden; 
+  
 }
-
 .flip-card-back2 {
-  width: 350px;
+  margin-top: -155px;
+  width: 440px;
   height: 582px;
   background-color: #faf8ec!important;
   transform: rotateY(180deg);
   backface-visibility: hidden; 
-  border: 8px solid black;
-
+  border-radius:20px;
 }
 .melCard  {
-  border: 3px solid black;
   width: 450px;
   height: 582px;
+  border-radius: 20px;
 }
 
 /* *****************  WHEEL **************** */
-
-.App-logo {
-  height: 310px;
+.titlefood {
   position: absolute;
-  top: 150px;
-  right: 8px;
+  margin-top: 10px;
+  margin-left: 115px;
+  font-family: 'Lora', serif;
+  color:#edc115;
+}
+.App-logo {
+  height: 280px;
+  position: absolute;
+  top: 60px;
+  right: 80px;
   animation: App-logo-spin infinite 0s linear;
   
 }
 .App-logo-speed-up {
-  height: 310px;
+  height: 280px;
   position: absolute;
-  top: 150px;
-  right: 8px;
+  top: 60px;
+  right: 80px;
   animation: App-logo-spin infinite 1s linear;
 
 }
 
-#peg {
+.peg {
   display: block;
-  width: 3%;
-  min-width: 15px;
-  max-width: 40px;
-  height: auto;
+  width: 15px;
   position: absolute;
-  top: 28%;
-  right: 23%;
+  top: 9%;
+  right: 220px;
   z-index: 2;
 }
 
 .buttonSpin {
   position: absolute;
-  top: 500px;
-  right: 150px;
-  
+  top: 350px;
+  right: 200px; 
+}
+
+.spin{
+  border-radius: 10px;
+}
+
+.spin:focus{
+  outline: none;
 }
 
 @keyframes App-logo-spin {
@@ -90,79 +98,22 @@
   }
 
 }
-/* *****************  TRAMWAY **************** */
 
-.tramway {
-  height:  50px;
-  position: absolute;
-  top: 130px;
-  left: 100px;
-  font-family: 'Lora',serif;
-  animation: App-logo-spin infinite 0s linear;
-}
-
-/* *****************  CRICKET + MARKET **************** */
-
-.Cricketpic {
-  height: 50px;
-  position: relative;
-  right: -130px;
-  top: 50px;
-  font-family: 'Lora',serif;
+.Events img {
+  height: 45px;
+  margin-left: -50px;
+  margin-top: -110px;
  
 }
-
-.market  {
- height: 50px;
-  position: relative;
-  left: 280px;
-  top: -115px;
-  font-family: 'Lora',serif;
+.Events{
+  display: flex;
+  justify-content: space-around;
 }
-
-/* *****************  PENGUIN **************** */
-
-.Penguinpic {
-  height: 50px;
+.toDo{
   position: relative;
-  top: 20%;
-  left: 62%;
-  font-family: 'Lora',serif;
-}
-/* **************** FOOD**************** */
-.Food  {
-  height: 50px!important;
-  position: relative;
-  left: 220px;
-  top: 0,0,0,0,15px;
-  font-family: 'Lora',serif;
-  
-}
-/* **************** BARBECUE **************** */
-
-.Barbecue{
-  height: 50px;
-  position: relative;
-  top: 7em;
-  left: 4em;
-  font-family: 'Lora',serif;
-}
-
-/* **************** CULTURE **************** */
-.Culture  {
-  height: 50px;
-  position: relative;
-  left: 75px;
-  top: 80px;
-  font-family: 'Lora',serif;
-}
-
-/* **************** MONUMENT **************** */
-.Shrine {
-  height: 50px;
-  position: relative;
-  left: 145px;
-  top: 5em;
-  font-family: 'Lora',serif;
+  bottom: -395px;
+  text-align: center;
+  font-family: 'Lora', serif;
+  color:#edc115;
 }
 
